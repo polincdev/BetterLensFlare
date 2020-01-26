@@ -3,6 +3,7 @@ Lens Flare effect for JMonkey Game Engine
 
 
 ### Usage:
+```
 //Let be some geometry added to the rootNode.
  Geometry target = ....
 
@@ -22,6 +23,11 @@ betterLensFlare.enableStreaks(lensFlareColor,BetterLensFlare.STREAK_TYPE_BASIC,1
 //
 //START for target and check occlusion on every 5th frame.
 betterLensFlare.startLensFlare(target,5);
+```
+### Credits
+https://hub.jmonkeyengine.org/t/lens-flare-code-small-update-screens/23796
+
+https://www.shadertoy.com/view/4sX3Rs
 
 #### Screenshots:
 
