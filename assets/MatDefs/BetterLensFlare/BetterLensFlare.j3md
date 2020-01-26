@@ -1,0 +1,43 @@
+MaterialDef Shockwave2D {
+
+MaterialParameters {
+    Int NumSamples;
+    Texture2D Texture;
+    Vector2 Resolution;
+    
+    Boolean Enabled;
+    Float StartTime;
+    Vector2 ClickPoint;
+    Float Duration;
+    Boolean BloomFadeOut;
+    Boolean EnabledGhosts;
+    Boolean EnabledDistortion;
+    Boolean EnabledFakeBloom;
+    Float BloomStrength; 
+    Float BloomStrengthDynamic; 
+    Float BloomRange; 
+    Boolean EnabledAnamorphic;
+    Float AnamStrength; 
+    Float AnamStrengthDynamic; 
+    Float AnamRange; 
+    Color ColorBloom;
+    Color ColorAnam;
+    Color ColorGhosts;
+
+    Boolean EnabledStreaks;
+    Int StreaksType;
+    Float StreaksCount;
+    Color ColorStreaks;
+    Float StreaksLength;
+    Float StreaksStrengthDynamic;
+}
+
+Technique {
+    VertexShader GLSL110:   MatDefs/BetterLensFlare/BetterLensFlare.vert
+    FragmentShader GLSL110: MatDefs/BetterLensFlare/BetterLensFlare.frag
+
+    WorldParameters {
+        Time;
+    }
+}
+}
