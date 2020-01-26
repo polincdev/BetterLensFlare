@@ -62,8 +62,8 @@ public class BetterLensFlareTest extends SimpleApplication {
      rootNode.attachChild(target);
    
      //Main color - common for everything
-   //  ColorRGBA lensFlareColor=new ColorRGBA(1.0f, 0.5f, 0.25f,1f);
-     ColorRGBA lensFlareColor=new ColorRGBA(0.2f, 0.3f, 0.75f,1f);
+     ColorRGBA lensFlareColor=new ColorRGBA(1.0f, 0.5f, 0.25f,1f);
+     // ColorRGBA lensFlareColor=new ColorRGBA(0.2f, 0.3f, 0.75f,1f);
      
     //Bloom effect to make for case when target is not completely occluded. 
     FilterPostProcessor fpp = new FilterPostProcessor(assetManager);
