@@ -1,6 +1,12 @@
 # BetterLensFlare
 Lens Flare effect for JMonkey Game Engine
 
+### Features
+1. Target based
+2. Fake bloom
+3. Anamorphism
+4. Streaks - two types
+5. Ghosts + Distortion 
 
 ### Usage:
 ```
