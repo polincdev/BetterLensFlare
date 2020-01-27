@@ -65,13 +65,13 @@ public class BetterLensFlareTest extends SimpleApplication {
      ColorRGBA lensFlareColor=new ColorRGBA(1.0f, 0.5f, 0.25f,1f);
      // ColorRGBA lensFlareColor=new ColorRGBA(0.2f, 0.3f, 0.75f,1f);
      
-    //Bloom effect to make for case when target is not completely occluded. 
+    //Bloom effect to make up for case when target is not completely occluded. 
     FilterPostProcessor fpp = new FilterPostProcessor(assetManager);
     BloomFilter bloomFilter=new BloomFilter(BloomFilter.GlowMode.Objects);
-    bloomFilter.setExposurePower(5);//def 5  //im mniejszy tym wiekszy bloom
-    // bloom.setDownSamplingFactor(2); //def 1
-    bloomFilter.setBloomIntensity(2); //2
-    bloomFilter.setBlurScale(2f);//1.5
+    bloomFilter.setExposurePower(5); 
+    // bloom.setDownSamplingFactor(2);  
+    bloomFilter.setBloomIntensity(2); 
+    bloomFilter.setBlurScale(2f); 
     bloomFilter.setDownSamplingFactor(2);
     fpp.addFilter(bloomFilter);
     this.getViewPort().addProcessor(fpp);
