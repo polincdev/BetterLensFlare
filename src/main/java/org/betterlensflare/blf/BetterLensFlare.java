@@ -1,4 +1,4 @@
-package org.betterlensflare.blf;
+package main.java.org.betterlensflare.blf;
 
 import com.jme3.app.SimpleApplication;
 import com.jme3.app.state.BaseAppState;
@@ -6,7 +6,6 @@ import com.jme3.bounding.BoundingVolume;
 import com.jme3.collision.CollisionResult;
 import com.jme3.collision.CollisionResults;
 import com.jme3.math.Ray;
-import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.post.FilterPostProcessor;
 import com.jme3.renderer.Camera;
@@ -25,10 +24,7 @@ import com.jme3.post.Filter;
 import com.jme3.renderer.RenderManager;
 import com.jme3.renderer.ViewPort;
 import java.io.IOException;
-/**
- *
- * @author xxx
- */
+ 
 public class BetterLensFlare  extends BaseAppState 
 {
     SimpleApplication app;
